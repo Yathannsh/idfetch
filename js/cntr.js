@@ -28,3 +28,12 @@ function idfunction(arr) {
     document.getElementById("id01").innerHTML = out;
 }
 }
+
+window.onload = function() {
+    var button = document.getElementsByClassName('button')[0];
+    button.addEventListener("click", function(e) {
+        e.preventDefault();
+        xyz();
+        document.getElementById('id01').style.visibility='visible';
+    });
+}
